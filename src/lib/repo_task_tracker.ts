@@ -61,7 +61,7 @@ export class RepoTaskTracker extends TaskTracker {
   - FILE_LOCATION: ${relative}:${task.file_location.row}:${task.file_location.col}
   - STATUS: ${TASK_STATUS.OPEN}
 
-${task.description} `;
+${task.description ?? ""} `;
   }
 
   // async getTasks(project?: string) {
