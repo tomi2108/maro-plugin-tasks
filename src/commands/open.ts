@@ -1,6 +1,6 @@
-import { getTasksFromDir } from "src/lib/utils";
-
 import { Command } from "@maro/maro";
+
+import { getTasksFromDir } from "../lib/utils";
 
 const OpenCommand: Command = {
   name: "open",
