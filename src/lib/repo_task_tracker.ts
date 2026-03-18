@@ -43,6 +43,7 @@ export class RepoTaskTracker extends TaskTracker {
     const tasks_dir = this.repo.dir.sub("tasks");
     tasks_dir.create();
     const task_dir = tasks_dir.sub(id);
+    task_dir.create()
     task_dir.createFile(TASK_FILE).write(this.toMdString(task));
     return id;
   }
